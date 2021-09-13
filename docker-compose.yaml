@@ -1,0 +1,35 @@
+# Version de l'API docker compose
+version: "3.7"
+# Liste des services à lancer
+services:
+  # nom du service (arbitraire, vous choisissez le nom)
+  front:
+    # emplacement du Dockerfile pour le build
+    build: .
+    # Configuration des ports (-p 80:80)
+    ports:
+      - 80:80
+      # - 443:443
+  back:
+    build: /json-server/
+    ports: 
+      - 3000:3000
+  bdd:
+    image: mongo
+  # mongo express (gestion du mongo en web)
+  mongo-express:
+    image: mongo-express
+    # liste des containers necessaire avant de démarrer mongo-express
+    depends_on:
+      - bdd
+    # stratégie de redémarage du container
+    restart: unless-stopped
+    # always: redémarre toujours (même si vous l'arretez)
+    # no : ne redémarre pas
+    # unless-stopped: redémarre qu'en cas de plantage
+    # on-failure: comme unless stopped mais li le code d'erreur pour savoir si il doit redémarrer (si errcode != 0)
+    ports:
+      - 3001:8081
+    # variables d'environnement
+    environment: 
+      - ME_CONFIG_MONGODB_SERVER=bdd

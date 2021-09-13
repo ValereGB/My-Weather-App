@@ -1,0 +1,62 @@
+{
+    "users": [
+      {
+        "name": "Galais-Brousse Valere",
+        "username": "valeregb",
+        "email": "galais.valere@gmail.com",
+        "phone": "0673420528",
+        "website": null,
+        "address": {
+          "street": "1 rue Hegel",
+          "suite": null,
+          "city": "Lille",
+          "zipcode": "59000"
+        },
+        "id": 1
+      },
+      {
+        "name": "Michel Trabendo",
+        "username": "Michel",
+        "email": "m.trabendo@gmail.com",
+        "phone": "0673356565",
+        "website": "michel.fr",
+        "address": {
+          "street": "13 rue du president Kennedy",
+          "suite": null,
+          "city": "Lille",
+          "zipcode": "59000"
+        },
+        "id": 2
+      },
+      {
+        "name": "Michel Trabendo",
+        "username": "Michel",
+        "email": "m.trabendo@gmail.com",
+        "phone": "0673356565",
+        "website": "michel.fr",
+        "address": {
+          "street": "13 rue du president Kennedy",
+          "suite": null,
+          "city": "Lille",
+          "zipcode": "59000"
+        },
+        "id": 3
+      },
+      {
+        "name": "Routier Benoit",
+        "username": "benoitsemifir",
+        "email": "benoit.routier7@gmail.com",
+        "phone": "0673420528",
+        "website": null,
+        "address": {
+          "street": "1 rue Hegel",
+          "suite": null,
+          "city": "Lille",
+          "zipcode": "59000"
+        },
+        "id": 4
+      }
+    ],
+    "posts": [],
+    "comments": []
+  }
